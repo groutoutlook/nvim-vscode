@@ -2,23 +2,18 @@
 
 This repository contains my Neovim configuration, including parallel settings for the [Neovim Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim). I've aimed to keep the experience as consistent as possible across both platforms, prioritizing Neovim keybinds and bringing them to VSCode, rather than the other way around.
 
-Notable features:
-
-- Use Which-key keybinds within VSCode
-- Tmux-like navigation inside VSCode
-
 ## Installation
 
-### Linux
+### Linux(Ubuntu)
 
 - `sudo snap install neovim --classic`
+  - Or just clone nightly and `make install`.
 - `sudo apt install fd-find ripgrep clang gcc make python3 python-is-python3 lua5.1 unzip`
 - [Nodejs](https://nodejs.org/en/download/package-manager)
 
 ### Windows
 
-- `choco install git fd ripgrep`
-- `choco install nodejs-lts --version="20.13.0"`
+- `scoop install git fd ripgrep nodejs`
 - `python -m pip install --user --upgrade pynvim`
 - [fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim) dependencies
 - [ctags](https://github.com/universal-ctags/ctags)
@@ -34,6 +29,7 @@ To install the configuration:
 - Move the json files from `vscode_config` to [VSCode settings directory](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
 - Install following extensions:
   - [Whichkey (vspacecode.whichkey)](https://marketplace.visualstudio.com/items?itemName=vspacecode.whichkey)
-  - [fuzzy-search (jacobdufault.fuzzy-search)](https://marketplace.visualstudio.com/items?itemName=jacobdufault.fuzzy-search)
   - [GitLens (eamodio.gitlens)](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+    - very optional though.
   - [Todo Tree (gruntfuggly.todo-tree)](https://marketplace.visualstudio.com/items?itemName=gruntfuggly.todo-tree)
+    - Also optional.
